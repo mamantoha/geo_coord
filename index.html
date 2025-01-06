@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.13.3">
+<meta name="crystal_docs.project_version" content="0.7.6">
+<meta name="crystal_docs.project_name" content="geo">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="geo">
+  <title>geo 0.7.6</title>
+  <script type="text/javascript">
+  CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          geo
+        </a>
+      </h1>
+
+      <span class="project-version">
+        0.7.6
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="geo/Geo" data-name="geo">
+      <a href="Geo.html">Geo</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="geo/Geo/Coord" data-name="geo::coord">
+      <a href="Geo/Coord.html">Coord</a>
+      
+        <ul>
+  
+  <li class=" " data-id="geo/Geo/Coord/Number" data-name="geo::coord::number">
+      <a href="Geo/Coord/Number.html">Number</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="geo/Geo/Polygon" data-name="geo::polygon">
+      <a href="Geo/Polygon.html">Polygon</a>
+      
+    </li>
+  
+  <li class=" " data-id="geo/Geo/Utils" data-name="geo::utils">
+      <a href="Geo/Utils.html">Utils</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1><a id="geo" class="anchor" href="#geo">  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Geo</h1>
+<p><img src="https://github.com/geocrystal/geo/workflows/Crystal%20CI/badge.svg" alt="Crystal CI" />
+<a href="https://github.com/geocrystal/geo/releases"><img src="https://img.shields.io/github/release/geocrystal/geo.svg" alt="GitHub release" /></a>
+<a href="https://geocrystal.github.io/geo/"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Docs" /></a>
+<a href="https://github.com/geocrystal/geo/blob/master/LICENSE"><img src="https://img.shields.io/github/license/geocrystal/geo.svg" alt="License" /></a></p>
+<p>Geospatial primitives, algorithms, and utilities for Crystal.</p>
+<h2><a id="installation" class="anchor" href="#installation">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Installation</h2>
+<p>Add this to your application's <code>shard.yml</code>:</p>
+<pre><code class="language-yaml">dependencies:
+  geo:
+    github: geocrystal/geo</code></pre>
+<p>Run <code>shards install</code></p>
+<h2><a id="usage" class="anchor" href="#usage">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Usage</h2>
+<p>A <code><a href="Geo/Coord.html">Geo::Coord</a></code> is a point in geographical coordinates: latitude and longitude.</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;geo&quot;</span>
+
+c <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">50.004444</span>, <span class="n">36.231389</span>)
+
+c.strfcoord(<span class="s">%{%latd %latm&#39; %0.1lats&quot; %lath, %lngd %lngm&#39; %0.1lngs&quot; %lngh}</span>)
+<span class="c"># =&gt; &quot;50 0&#39; 16.0&quot; N, 36 13&#39; 53.0&quot; E&quot;</span>
+
+c.strfcoord(<span class="s">&quot;%lat,%lng&quot;</span>)
+<span class="c"># =&gt; &quot;-50.004444,-36.231389&quot;</span>
+
+c.to_s
+<span class="c"># =&gt; &quot;50°0&#39;16&quot;N 36°13&#39;53&quot;E&quot;</span>
+
+pos <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">50.004444</span>, <span class="n">36.231389</span>)
+
+pos.geohash
+<span class="c"># =&gt; &quot;ubcu2rnbuxcx&quot;</span>
+
+pos.geohash(<span class="n">5</span>)
+<span class="c"># =&gt; &quot;ubcu2&quot;</span></code></pre>
+<h3><a id="polygon" class="anchor" href="#polygon">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Polygon</h3>
+<p>A polygon represents an area enclosed by a closed path (or loop), which is defined by a series of coordinates.</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;geo&quot;</span>
+
+pos1 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.3142533036254</span>, <span class="n">-93.47527313511819</span>)
+pos2 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.31232182518015</span>, <span class="n">-93.34893036168069</span>)
+pos3 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.23694281999268</span>, <span class="n">-93.35167694371194</span>)
+pos4 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.23500870841669</span>, <span class="n">-93.47801971714944</span>)
+
+polygon <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Polygon</span>.new([pos1, pos2, pos3, pos4])</code></pre>
+<p>The Polygon in the example above consists of four sets of <code><a href="Geo/Coord.html">Geo::Coord</a></code> coordinates, but notice that the first and last sets define the same location, which completes the loop. In practice, however, since polygons define closed areas, you don't need to specify the last set of coordinates. Ot will automatically complete the polygon by connecting the last location back to the first location.</p>
+<p>The following example is identical to the previous one, except that the last <code><a href="Geo/Coord.html">Geo::Coord</a></code> is omitted:</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;geo&quot;</span>
+
+pos1 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.3142533036254</span>, <span class="n">-93.47527313511819</span>)
+pos2 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.31232182518015</span>, <span class="n">-93.34893036168069</span>)
+pos3 <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.23694281999268</span>, <span class="n">-93.35167694371194</span>)
+
+polygon <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Polygon</span>.new([pos1, pos2, pos3])</code></pre>
+<p>Additional actions:</p>
+<pre><code class="language-crystal">coord_inside <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.27428243796789</span>, <span class="n">-93.41648483416066</span>)
+coord_outside <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">45.45411010558687</span>, <span class="n">-93.78151703160256</span>)
+
+polygon.contains?(coord_inside)  <span class="c"># =&gt; true</span>
+polygon.contains?(coord_outside) <span class="c"># =&gt; false</span>
+
+polygon.centroid <span class="c"># =&gt; Geo::Coord(@lat=45.27463866133501, @lng=-93.41400121829719)</span></code></pre>
+<p>Additionally you can initialize polygon as <a href="https://en.wikipedia.org/wiki/Convex_hull">convex hull</a> from coordinates of points.</p>
+<pre><code class="language-crystal">points <span class="o">=</span> [
+  {<span class="n">1.0</span>, <span class="n">1.0</span>},
+  {<span class="n">1.0</span>, <span class="n">0.0</span>},
+  {<span class="n">1.0</span>, <span class="n">-1.0</span>},
+  {<span class="n">0.0</span>, <span class="n">-1.0</span>},
+  {<span class="n">-1.0</span>, <span class="n">-1.0</span>},
+  {<span class="n">-1.0</span>, <span class="n">0.0</span>},
+  {<span class="n">-1.0</span>, <span class="n">1.0</span>},
+  {<span class="n">0.0</span>, <span class="n">1.0</span>},
+  {<span class="n">0.0</span>, <span class="n">0.0</span>},
+].map { <span class="o">|</span>point<span class="o">|</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(point[<span class="n">0</span>], point[<span class="n">1</span>]) }
+
+polygon <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Polygon</span>.new(points, convex_hull: <span class="n">true</span>)
+polygon.coords
+<span class="c"># =&gt; {-1.0, -1.0}, {1.0, -1.0}, {1.0, 1.0}, {-1.0, 1.0}, {-1.0, -1.0}</span></code></pre>
+<p>The convex hull is computed using the <a href="https://github.com/geocrystal/convex_hull">convex_hull</a> library.</p>
+<h3><a id="formatting" class="anchor" href="#formatting">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Formatting</h3>
+<p><code>Geo::Coord#strfcoord</code> formats coordinates according to directives.</p>
+<p>Each directive starts with <code>%</code> and can contain some modifiers before its name.</p>
+<p>Acceptable modifiers:</p>
+<ul>
+<li>unsigned integers: none;</li>
+<li>signed integers: <code>+</code> for mandatory sign printing;</li>
+<li>floats: same as integers and number of digits modifier, like <code>0.3</code>.</li>
+</ul>
+<p>List of directives:</p>
+<p>| Directive | Description                                 |
+| --------- | ------------------------------------------- |
+| <code>%lat</code>    | Full latitude, floating point, signed       |
+| <code>%latds</code>  | Latitude degrees, integer, signed           |
+| <code>%latd</code>   | Latitude degrees, integer, unsigned         |
+| <code>%latm</code>   | Latitude minutes, integer, unsigned         |
+| <code>%lats</code>   | Latitude seconds, floating point, unsigned  |
+| <code>%lath</code>   | Latitude hemisphere, &quot;N&quot; or &quot;S&quot;             |
+| <code>%lng</code>    | Full longitude, floating point, signed      |
+| <code>%lngds</code>  | Longitude degrees, integer, signed          |
+| <code>%lngd</code>   | Longitude degrees, integer, unsigned        |
+| <code>%lngm</code>   | Longitude minutes, integer, unsigned        |
+| <code>lngs</code>    | Longitude seconds, floating point, unsigned |
+| <code>%lngh</code>   | Longitude hemisphere, &quot;E&quot; or &quot;W&quot;            |</p>
+<p>Examples:</p>
+<pre><code class="language-crystal">g = Geo::Coord.new(50.004444, 36.231389)
+g.strfcoord(&#39;%+lat, %+lng&#39;)
+# =&gt; &quot;+50.004444, +36.231389&quot;
+g.strfcoord(&quot;%latd°%latm&#39;%lath -- %lngd°%lngm&#39;%lngh&quot;)
+# =&gt; &quot;50°0&#39;N -- 36°13&#39;E&quot;</code></pre>
+<p><code>strfcoord</code> handles seconds rounding implicitly:</p>
+<pre><code class="language-crystal">pos = Geo::Coord.new(0.033333, 91.333333)
+pos.strfcoord(&#39;%latd %latm %0.5lats&#39;) # =&gt; &quot;0 1 59.99880&quot;
+pos.strfcoord(&#39;%latd %latm %lats&#39;)  # =&gt; &quot;0 2 0&quot;</code></pre>
+<h3><a id="calculate-distances-between-two-coords" class="anchor" href="#calculate-distances-between-two-coords">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Calculate distances between two coords</h3>
+<p>Haversine formula from <a href="https://github.com/geocrystal/haversine">haversine</a> shard is used.</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;geo&quot;</span>
+<span class="k">require</span> <span class="s">&quot;geo/distance&quot;</span>
+
+london <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">51.500153</span>, <span class="n">-0.126236</span>)
+new_york <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">40.714268</span>, <span class="n">-74.005974</span>)
+
+new_york.distance(london).to_kilometers
+<span class="c"># =&gt; 5570.4744596620685</span></code></pre>
+<h3><a id="calculates-the-location-of-a-destination-coord" class="anchor" href="#calculates-the-location-of-a-destination-coord">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Calculates the location of a destination coord</h3>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;geo&quot;</span>
+<span class="k">require</span> <span class="s">&quot;geo/distance&quot;</span>
+
+point <span class="o">=</span> <span class="t">Geo</span><span class="t">::</span><span class="t">Coord</span>.new(<span class="n">39</span>, <span class="n">-75</span>)
+
+point.destination(<span class="n">5000</span>, <span class="n">90</span>, <span class="n">:kilometers</span>)
+<span class="c"># Geo::Coord(@lat=26.440010707631124, @lng=-22.885355549364313)</span></code></pre>
+<h2><a id="contributing" class="anchor" href="#contributing">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Contributing</h2>
+<ol>
+<li>Fork it (<a href="https://github.com/geocrystal/geo/fork">https://github.com/geocrystal/geo/fork</a>)</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create a new Pull Request</li>
+</ol>
+<h2><a id="contributors" class="anchor" href="#contributors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Contributors</h2>
+<ul>
+<li><a href="https://github.com/mamantoha">Anton Maminov</a> - creator and maintainer</li>
+</ul>
+</div>
+</body>
+</html>

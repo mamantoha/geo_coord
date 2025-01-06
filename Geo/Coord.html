@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.13.3">
+<meta name="crystal_docs.project_version" content="0.7.6">
+<meta name="crystal_docs.project_name" content="geo">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="geo">
+  <title>Geo::Coord - geo 0.7.6</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          geo
+        </a>
+      </h1>
+
+      <span class="project-version">
+        0.7.6
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="geo/Geo" data-name="geo">
+      <a href="../Geo.html">Geo</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="geo/Geo/Coord" data-name="geo::coord">
+      <a href="../Geo/Coord.html">Coord</a>
+      
+        <ul>
+  
+  <li class=" " data-id="geo/Geo/Coord/Number" data-name="geo::coord::number">
+      <a href="../Geo/Coord/Number.html">Number</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="geo/Geo/Polygon" data-name="geo::polygon">
+      <a href="../Geo/Polygon.html">Polygon</a>
+      
+    </li>
+  
+  <li class=" " data-id="geo/Geo/Utils" data-name="geo::utils">
+      <a href="../Geo/Utils.html">Utils</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> Geo::<wbr>Coord
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Geo/Coord.html">Geo::Coord</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>A <code><a href="../Geo/Coord.html">Coord</a></code> is a point in geographical coordinates: latitude and longitude.</p>
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type">Comparable(<a href="../Geo/Coord.html">Geo::Coord</a>)</li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      geo/bearing.cr
+    
+    <br/>
+  
+    
+      geo/coord.cr
+    
+    <br/>
+  
+    
+      geo/distance.cr
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="DIRECTIVES">
+        <strong>DIRECTIVES</strong> = <code>{<span class="o">/</span><span class="s">%(</span><span class="i">#{</span><span class="t">FLOATUFLAGS</span><span class="i">}</span><span class="s">)</span>?lats<span class="o">/</span> <span class="o">=&gt;</span> <span class="o">-&gt;</span>(m : <span class="t">Regex</span><span class="t">::</span><span class="t">MatchData</span>) <span class="k">do</span>
+  <span class="s">&quot;%&lt;lats&gt;</span><span class="i">#{</span>m[<span class="n">1</span>]? <span class="o">||</span> <span class="s">&quot;0.&quot;</span><span class="i">}</span><span class="s">f&quot;</span>
+<span class="k">end</span>, <span class="s">&quot;%latm&quot;</span> <span class="o">=&gt;</span> <span class="s">&quot;%&lt;latm&gt;i&quot;</span>, <span class="s">/%(</span><span class="i">#{</span><span class="t">INTFLAGS</span><span class="i">}</span><span class="s">)?latds/</span> <span class="o">=&gt;</span> <span class="o">-&gt;</span>(m : <span class="t">Regex</span><span class="t">::</span><span class="t">MatchData</span>) <span class="k">do</span>
+  <span class="s">&quot;%&lt;latds&gt;</span><span class="i">#{</span>m[<span class="n">1</span>]<span class="i">}</span><span class="s">i&quot;</span>
+<span class="k">end</span>, <span class="s">&quot;%latd&quot;</span> <span class="o">=&gt;</span> <span class="s">&quot;%&lt;latd&gt;i&quot;</span>, <span class="s">&quot;%lath&quot;</span> <span class="o">=&gt;</span> <span class="s">&quot;%&lt;lath&gt;s&quot;</span>, <span class="s">/%(</span><span class="i">#{</span><span class="t">FLOATFLAGS</span><span class="i">}</span><span class="s">)?lat/</span> <span class="o">=&gt;</span> <span class="o">-&gt;</span>(m : <span class="t">Regex</span><span class="t">::</span><span class="t">MatchData</span>) <span class="k">do</span>
+  <span class="s">&quot;%&lt;lat&gt;</span><span class="i">#{</span>m[<span class="n">1</span>]<span class="i">}</span><span class="s">f&quot;</span>
+<span class="k">end</span>, <span class="s">/%(</span><span class="i">#{</span><span class="t">FLOATUFLAGS</span><span class="i">}</span><span class="s">)?lngs/</span> <span class="o">=&gt;</span> <span class="o">-&gt;</span>(m : <span class="t">Regex</span><span class="t">::</span><span class="t">MatchData</span>) <span class="k">do</span>
+  <span class="s">&quot;%&lt;lngs&gt;</span><span class="i">#{</span>m[<span class="n">1</span>]? <span class="o">||</span> <span class="s">&quot;0.&quot;</span><span class="i">}</span><span class="s">f&quot;</span>
+<span class="k">end</span>, <span class="s">&quot;%lngm&quot;</span> <span class="o">=&gt;</span> <span class="s">&quot;%&lt;lngm&gt;i&quot;</span>, <span class="s">/%(</span><span class="i">#{</span><span class="t">INTFLAGS</span><span class="i">}</span><span class="s">)?lngds/</span> <span class="o">=&gt;</span> <span class="o">-&gt;</span>(m : <span class="t">Regex</span><span class="t">::</span><span class="t">MatchData</span>) <span class="k">do</span>
+  <span class="s">&quot;%&lt;lngds&gt;</span><span class="i">#{</span>m[<span class="n">1</span>]<span class="i">}</span><span class="s">i&quot;</span>
+<span class="k">end</span>, <span class="s">&quot;%lngd&quot;</span> <span class="o">=&gt;</span> <span class="s">&quot;%&lt;lngd&gt;i&quot;</span>, <span class="s">&quot;%lngh&quot;</span> <span class="o">=&gt;</span> <span class="s">&quot;%&lt;lngh&gt;s&quot;</span>, <span class="s">/%(</span><span class="i">#{</span><span class="t">FLOATFLAGS</span><span class="i">}</span><span class="s">)?lng/</span> <span class="o">=&gt;</span> <span class="o">-&gt;</span>(m : <span class="t">Regex</span><span class="t">::</span><span class="t">MatchData</span>) <span class="k">do</span>
+  <span class="s">&quot;%&lt;lng&gt;</span><span class="i">#{</span>m[<span class="n">1</span>]<span class="i">}</span><span class="s">f&quot;</span>
+<span class="k">end</span>}</code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="FLOATFLAGS">
+        <strong>FLOATFLAGS</strong> = <code><span class="s">/\+?</span><span class="i">#{</span><span class="t">FLOATUFLAGS</span><span class="i">}</span><span class="s">?/</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="FLOATUFLAGS">
+        <strong>FLOATUFLAGS</strong> = <code><span class="s">/0\.\d+/</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="INTFLAGS">
+        <strong>INTFLAGS</strong> = <code><span class="s">/\+?/</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28lat%3ANumber%2Clng%3ANumber%29-class-method" class="signature"><strong>.new</strong>(lat : Number, lng : Number)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#%3C%3D%3E%28other%3AGeo%3A%3ACoord%29-instance-method" class="signature"><strong>#<=></strong>(other : Geo::Coord)</a>
+        
+          <div class="summary"><p>The comparison operator.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bearing%28to%3AGeo%3A%3ACoord%2Cfinal%3Dfalse%29%3AFloat64-instance-method" class="signature"><strong>#bearing</strong>(to : Geo::Coord, final = <span class="n">false</span>) : Float64</a>
+        
+          <div class="summary"><p>Calculates initial and final bearings between two points using great-circle distance formulas</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#between%3F%28p1%3AGeo%3A%3ACoord%2Cp2%3AGeo%3A%3ACoord%29-instance-method" class="signature"><strong>#between?</strong>(p1 : Geo::Coord, p2 : Geo::Coord)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#destination%28distance%3ANumber%2Cbearing%3ANumber%2Cunit%3ASymbol%3D%3Akilometers%29%3AGeo%3A%3ACoord-instance-method" class="signature"><strong>#destination</strong>(distance : Number, bearing : Number, unit : Symbol = <span class="n">:kilometers</span>) : Geo::Coord</a>
+        
+          <div class="summary"><p>Calculates the location of a destination point</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#distance%28other%3AGeo%3A%3ACoord%29%3AHaversine%3A%3ADistance-instance-method" class="signature"><strong>#distance</strong>(other : Geo::Coord) : Haversine::Distance</a>
+        
+          <div class="summary"><p>Calculates distance to <code>other</code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#geohash%28precision%3D12%29-instance-method" class="signature"><strong>#geohash</strong>(precision = <span class="n">12</span>)</a>
+        
+          <div class="summary"><p>Returns a geohash representing coordinates.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lat%3AFloat32%7CFloat64%7CInt32-instance-method" class="signature"><strong>#lat</strong> : Float32 | Float64 | Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#latd%3AInt32-instance-method" class="signature"><strong>#latd</strong> : Int32</a>
+        
+          <div class="summary"><p>Returns latitude degrees</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#latds-instance-method" class="signature"><strong>#latds</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lath%3AString-instance-method" class="signature"><strong>#lath</strong> : String</a>
+        
+          <div class="summary"><p>Returns latitude hemisphere</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#latm%3AInt32-instance-method" class="signature"><strong>#latm</strong> : Int32</a>
+        
+          <div class="summary"><p>Returns latitude minutes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lats%3ANumber-instance-method" class="signature"><strong>#lats</strong> : Number</a>
+        
+          <div class="summary"><p>Returns latitude seconds</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ll-instance-method" class="signature"><strong>#ll</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lng%3AFloat32%7CFloat64%7CInt32-instance-method" class="signature"><strong>#lng</strong> : Float32 | Float64 | Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lngd%3AInt32-instance-method" class="signature"><strong>#lngd</strong> : Int32</a>
+        
+          <div class="summary"><p>Returns longitude degrees</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lngds-instance-method" class="signature"><strong>#lngds</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lngh%3AString-instance-method" class="signature"><strong>#lngh</strong> : String</a>
+        
+          <div class="summary"><p>Returns longitude hemisphere</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lngm%3AInt32-instance-method" class="signature"><strong>#lngm</strong> : Int32</a>
+        
+          <div class="summary"><p>Returns longitude minutes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lngs%3ANumber-instance-method" class="signature"><strong>#lngs</strong> : Number</a>
+        
+          <div class="summary"><p>Returns longitude seconds</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strfcoord%28formatstr%29%3AString-instance-method" class="signature"><strong>#strfcoord</strong>(formatstr) : String</a>
+        
+          <div class="summary"><p>Formats coordinates according to directives in <code>formatstr</code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_ewkb%28bytes%3ABytes%3DBytes.new%2823%29%2Cbyte_format%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ABigEndian%29%3ABytes-instance-method" class="signature"><strong>#to_ewkb</strong>(bytes : Bytes = <span class="t">Bytes</span>.new(<span class="n">23</span>), byte_format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">BigEndian</span>) : Bytes</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_ewkt%28io%3AIO%2Coutput_type%3Dtrue%2Coutput_parentheses%3Dtrue%29%3ANil-instance-method" class="signature"><strong>#to_ewkt</strong>(io : IO, output_type = <span class="n">true</span>, output_parentheses = <span class="n">true</span>) : Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_ewkt%3AString-instance-method" class="signature"><strong>#to_ewkt</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_geojson%3AGeoJSON%3A%3ACoordinates-instance-method" class="signature"><strong>#to_geojson</strong> : GeoJSON::Coordinates</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s%28io%29-instance-method" class="signature"><strong>#to_s</strong>(io)</a>
+        
+          <div class="summary"><p>Returns a string representing coordinates.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_wkb%28bytes%3ABytes%3DBytes.new%2821%29%2Cbyte_format%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ABigEndian%29%3ABytes-instance-method" class="signature"><strong>#to_wkb</strong>(bytes : Bytes = <span class="t">Bytes</span>.new(<span class="n">21</span>), byte_format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">BigEndian</span>) : Bytes</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_wkt%28io%3AIO%2Coutput_type%3Dtrue%2Coutput_parentheses%3Dtrue%29%3ANil-instance-method" class="signature"><strong>#to_wkt</strong>(io : IO, output_type = <span class="n">true</span>, output_parentheses = <span class="n">true</span>) : Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_wkt%3AString-instance-method" class="signature"><strong>#to_wkt</strong> : String</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(lat:Number,lng:Number)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(lat : <a href="../Geo/Coord/Number.html">Number</a>, lng : <a href="../Geo/Coord/Number.html">Number</a>)
+
+        <a class="method-permalink" href="#new%28lat%3ANumber%2Clng%3ANumber%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="&lt;=&gt;(other:Geo::Coord)-instance-method">
+      <div class="signature">
+        
+        def <strong><=></strong>(other : <a href="../Geo/Coord.html">Geo::Coord</a>)
+
+        <a class="method-permalink" href="#%3C%3D%3E%28other%3AGeo%3A%3ACoord%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+            <div class="doc-inherited">
+              Description copied from module Comparable(<a href="../Geo/Coord.html">Geo::Coord</a>)
+            </div>
+          
+          <p>The comparison operator. Returns <code>0</code> if the two objects are equal,
+a negative number if this object is considered less than <em>other</em>,
+a positive number if this object is considered greater than <em>other</em>,
+or <code>nil</code> if the two objects are not comparable.</p>
+<p>Subclasses define this method to provide class-specific ordering.</p>
+<p>The comparison operator is usually used to sort values:</p>
+<pre><code class="language-crystal"><span class="c"># Sort in a descending way:</span>
+[<span class="n">3</span>, <span class="n">1</span>, <span class="n">2</span>].sort { <span class="o">|</span>x, y<span class="o">|</span> y <span class="o">&lt;=&gt;</span> x } <span class="c"># =&gt; [3, 2, 1]</span>
+
+<span class="c"># Sort in an ascending way:</span>
+[<span class="n">3</span>, <span class="n">1</span>, <span class="n">2</span>].sort { <span class="o">|</span>x, y<span class="o">|</span> x <span class="o">&lt;=&gt;</span> y } <span class="c"># =&gt; [1, 2, 3]</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bearing(to:Geo::Coord,final=false):Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>bearing</strong>(to : <a href="../Geo/Coord.html">Geo::Coord</a>, final = <span class="n">false</span>) : Float64
+
+        <a class="method-permalink" href="#bearing%28to%3AGeo%3A%3ACoord%2Cfinal%3Dfalse%29%3AFloat64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Calculates initial and final bearings between two points using great-circle distance formulas</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="between?(p1:Geo::Coord,p2:Geo::Coord)-instance-method">
+      <div class="signature">
+        
+        def <strong>between?</strong>(p1 : <a href="../Geo/Coord.html">Geo::Coord</a>, p2 : <a href="../Geo/Coord.html">Geo::Coord</a>)
+
+        <a class="method-permalink" href="#between%3F%28p1%3AGeo%3A%3ACoord%2Cp2%3AGeo%3A%3ACoord%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="destination(distance:Number,bearing:Number,unit:Symbol=:kilometers):Geo::Coord-instance-method">
+      <div class="signature">
+        
+        def <strong>destination</strong>(distance : <a href="../Geo/Coord/Number.html">Number</a>, bearing : <a href="../Geo/Coord/Number.html">Number</a>, unit : Symbol = <span class="n">:kilometers</span>) : <a href="../Geo/Coord.html">Geo::Coord</a>
+
+        <a class="method-permalink" href="#destination%28distance%3ANumber%2Cbearing%3ANumber%2Cunit%3ASymbol%3D%3Akilometers%29%3AGeo%3A%3ACoord-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Calculates the location of a destination point</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="distance(other:Geo::Coord):Haversine::Distance-instance-method">
+      <div class="signature">
+        
+        def <strong>distance</strong>(other : <a href="../Geo/Coord.html">Geo::Coord</a>) : Haversine::Distance
+
+        <a class="method-permalink" href="#distance%28other%3AGeo%3A%3ACoord%29%3AHaversine%3A%3ADistance-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Calculates distance to <code>other</code>.
+Haversine formula is used.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="geohash(precision=12)-instance-method">
+      <div class="signature">
+        
+        def <strong>geohash</strong>(precision = <span class="n">12</span>)
+
+        <a class="method-permalink" href="#geohash%28precision%3D12%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a geohash representing coordinates.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lat:Float32|Float64|Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>lat</strong> : Float32 | Float64 | Int32
+
+        <a class="method-permalink" href="#lat%3AFloat32%7CFloat64%7CInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="latd:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>latd</strong> : Int32
+
+        <a class="method-permalink" href="#latd%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns latitude degrees</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="latds-instance-method">
+      <div class="signature">
+        
+        def <strong>latds</strong>
+
+        <a class="method-permalink" href="#latds-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lath:String-instance-method">
+      <div class="signature">
+        
+        def <strong>lath</strong> : String
+
+        <a class="method-permalink" href="#lath%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns latitude hemisphere</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="latm:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>latm</strong> : Int32
+
+        <a class="method-permalink" href="#latm%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns latitude minutes</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lats:Number-instance-method">
+      <div class="signature">
+        
+        def <strong>lats</strong> : <a href="../Geo/Coord/Number.html">Number</a>
+
+        <a class="method-permalink" href="#lats%3ANumber-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns latitude seconds</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ll-instance-method">
+      <div class="signature">
+        
+        def <strong>ll</strong>
+
+        <a class="method-permalink" href="#ll-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lng:Float32|Float64|Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>lng</strong> : Float32 | Float64 | Int32
+
+        <a class="method-permalink" href="#lng%3AFloat32%7CFloat64%7CInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lngd:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>lngd</strong> : Int32
+
+        <a class="method-permalink" href="#lngd%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns longitude degrees</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lngds-instance-method">
+      <div class="signature">
+        
+        def <strong>lngds</strong>
+
+        <a class="method-permalink" href="#lngds-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lngh:String-instance-method">
+      <div class="signature">
+        
+        def <strong>lngh</strong> : String
+
+        <a class="method-permalink" href="#lngh%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns longitude hemisphere</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lngm:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>lngm</strong> : Int32
+
+        <a class="method-permalink" href="#lngm%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns longitude minutes</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lngs:Number-instance-method">
+      <div class="signature">
+        
+        def <strong>lngs</strong> : <a href="../Geo/Coord/Number.html">Number</a>
+
+        <a class="method-permalink" href="#lngs%3ANumber-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns longitude seconds</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strfcoord(formatstr):String-instance-method">
+      <div class="signature">
+        
+        def <strong>strfcoord</strong>(formatstr) : String
+
+        <a class="method-permalink" href="#strfcoord%28formatstr%29%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Formats coordinates according to directives in <code>formatstr</code>.</p>
+<p>Each directive starts with <code>%</code> and can contain some modifiers before its name.</p>
+<p>Acceptable modifiers:</p>
+<ul>
+<li>unsigned integers: none;</li>
+<li>signed integers: <code>+</code> for mandatory sign printing;</li>
+<li>floats: same as integers and number of digits modifier, like <code>0.3</code>.</li>
+</ul>
+<p>List of directives:</p>
+<ul>
+<li><code>%lat</code>   - Full latitude, floating point, signed</li>
+<li><code>%latds</code> - Latitude degrees, integer, signed</li>
+<li><code>%latd</code>  - Latitude degrees, integer, unsigned</li>
+<li><code>%latm</code>  - Latitude minutes, integer, unsigned</li>
+<li><code>%lats</code>  - Latitude seconds, floating point, unsigned</li>
+<li><code>%lath</code>  - Latitude hemisphere, &quot;N&quot; or &quot;S&quot;</li>
+<li><code>%lng</code>   - Full longitude, floating point, signed</li>
+<li><code>%lngds</code> - Longitude degrees, integer, signed</li>
+<li><code>%lngd</code>  - Longitude degrees, integer, unsigned</li>
+<li><code>%lngm</code>  - Longitude minutes, integer, unsigned</li>
+<li><code><a href="../Geo/Coord.html#lngs%3ANumber-instance-method">#lngs</a></code>   - Longitude seconds, floating point, unsigned</li>
+<li>`%lngh`` - Longitude hemisphere, &quot;E&quot; or &quot;W&quot;</li>
+</ul>
+<p>Examples:</p>
+<pre><code class="language-crystal">g = Geo::Coord.new(50.004444, 36.231389)
+g.strfcoord(&#39;%+lat, %+lng&#39;)
+# =&gt; &quot;+50.004444, +36.231389&quot;
+g.strfcoord(&quot;%latd°%latm&#39;%lath -- %lngd°%lngm&#39;%lngh&quot;)
+# =&gt; &quot;50°0&#39;N -- 36°13&#39;E&quot;</code></pre>
+<p><code><a href="../Geo/Coord.html#strfcoord%28formatstr%29%3AString-instance-method">#strfcoord</a></code> handles seconds rounding implicitly:</p>
+<pre><code class="language-crystal">pos = Geo::Coord.new(0.033333, 91.333333)
+pos.strfcoord(&#39;%latd %latm %0.5lats&#39;) # =&gt; &quot;0 1 59.99880&quot;
+pos.strfcoord(&#39;%latd %latm %lats&#39;)  # =&gt; &quot;0 2 0&quot;</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_ewkb(bytes:Bytes=Bytes.new(23),byte_format:IO::ByteFormat=IO::ByteFormat::BigEndian):Bytes-instance-method">
+      <div class="signature">
+        
+        def <strong>to_ewkb</strong>(bytes : Bytes = <span class="t">Bytes</span>.new(<span class="n">23</span>), byte_format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">BigEndian</span>) : Bytes
+
+        <a class="method-permalink" href="#to_ewkb%28bytes%3ABytes%3DBytes.new%2823%29%2Cbyte_format%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ABigEndian%29%3ABytes-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_ewkt(io:IO,output_type=true,output_parentheses=true):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>to_ewkt</strong>(io : IO, output_type = <span class="n">true</span>, output_parentheses = <span class="n">true</span>) : Nil
+
+        <a class="method-permalink" href="#to_ewkt%28io%3AIO%2Coutput_type%3Dtrue%2Coutput_parentheses%3Dtrue%29%3ANil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_ewkt:String-instance-method">
+      <div class="signature">
+        
+        def <strong>to_ewkt</strong> : String
+
+        <a class="method-permalink" href="#to_ewkt%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_geojson:GeoJSON::Coordinates-instance-method">
+      <div class="signature">
+        
+        def <strong>to_geojson</strong> : GeoJSON::Coordinates
+
+        <a class="method-permalink" href="#to_geojson%3AGeoJSON%3A%3ACoordinates-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s(io)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong>(io)
+
+        <a class="method-permalink" href="#to_s%28io%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a string representing coordinates.</p>
+<pre><code class="language-crystal">g.to_s             <span class="c"># =&gt; &quot;50°0&#39;16\&quot;N 36°13&#39;53\&quot;E&quot;</span>
+g.to_s(dms: <span class="n">false</span>) <span class="c"># =&gt; &quot;50.004444,36.231389&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_wkb(bytes:Bytes=Bytes.new(21),byte_format:IO::ByteFormat=IO::ByteFormat::BigEndian):Bytes-instance-method">
+      <div class="signature">
+        
+        def <strong>to_wkb</strong>(bytes : Bytes = <span class="t">Bytes</span>.new(<span class="n">21</span>), byte_format : IO::ByteFormat = <span class="t">IO</span><span class="t">::</span><span class="t">ByteFormat</span><span class="t">::</span><span class="t">BigEndian</span>) : Bytes
+
+        <a class="method-permalink" href="#to_wkb%28bytes%3ABytes%3DBytes.new%2821%29%2Cbyte_format%3AIO%3A%3AByteFormat%3DIO%3A%3AByteFormat%3A%3ABigEndian%29%3ABytes-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_wkt(io:IO,output_type=true,output_parentheses=true):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>to_wkt</strong>(io : IO, output_type = <span class="n">true</span>, output_parentheses = <span class="n">true</span>) : Nil
+
+        <a class="method-permalink" href="#to_wkt%28io%3AIO%2Coutput_type%3Dtrue%2Coutput_parentheses%3Dtrue%29%3ANil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_wkt:String-instance-method">
+      <div class="signature">
+        
+        def <strong>to_wkt</strong> : String
+
+        <a class="method-permalink" href="#to_wkt%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>
